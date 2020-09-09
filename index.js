@@ -52,7 +52,7 @@ function total() {
 function removeFromCart(item) {
   console.log(cart)
   for (let j = 0; j < cart.length; j++) {
-    if (cart[j].itemName === item) {
+    if (item === cart[j].itemName) {
       cart.splice(j, 1)
       console.log(cart)
       return cart
