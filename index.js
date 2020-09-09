@@ -50,11 +50,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  for (let i = 0; i < cart.length; i++) {
-    if (cart[i].itemName === item) {
-      cart.splice(i, 1)
+  console.log(cart)
+  for (let j = 0; j < cart.length; j++) {
+    if (cart[j].itemName === item) {
+      cart.splice(j, 1)
+      console.log(cart)
+      return cart
     }
-    return cart
   }
   return `That item is not in your cart.`
 }
